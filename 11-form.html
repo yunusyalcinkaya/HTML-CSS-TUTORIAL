@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sayfası</title>
+</head>
+
+<body>
+    <form>
+        <!--name üstüne bastığımızda for özelliğinde verilen id ye ait yere odaklar-->
+        <label for="name">Name</label><br>
+
+        <!--name özelliği, formu submit ettiğimizde gönderileni örneğin bir php dosyasında
+        yakalamak istiyorsak name ile yakalarız-->
+        <!--placeholder alan içinde default gözükecek yazıyı belirler-->
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <br>
+
+        <label for="email">Email</label> <br>
+        <!--sadece email syntax ında girdi kabul eder-->
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password">
+        <br>
+
+        <label for="data">Date</label><br>
+        <input type="date" id="date" name="date">
+        <br>
+
+        Gender <br>
+        Male
+        <input type="radio" name="gender" value="male" checked>
+        Female
+        <input type="radio" name="gender" value="female">
+        Other
+        <input type="radio" name="gender" value="other">
+        <br>
+
+        Hobbies <br>
+        Music
+        <input type="checkbox" name="music" id="music">
+        Art
+        <input type="checkbox" name="art" id="art">
+        Football
+        <input type="checkbox" name="football" id="football">
+        <br>
+
+        Degree <br>
+        <select name="degree" id="degree">
+            <option value="graduate">Graduate</option>
+            <option value="undergraduate" selected>Undergraduate</option>
+            <option value="highscholl">High School</option>
+
+        </select>
+        <br>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+<br>
+
+        <!--2 şekilde submit butonu oluşturulabilir, aynı işi yaparlar-->
+        <input type="submit" value="Gönder">
+        <button type="submit">Gönder</button>
+
+        <!--input alanlarına birşeyler yazdıysak onları siler-->
+        <!--2 şekilde yapılabilir-->
+        <input type="reset" value="Sıfırla">
+        <button type="reset">Sıfırla</button>
+    </form>
+
+</body>
+
+</html>
