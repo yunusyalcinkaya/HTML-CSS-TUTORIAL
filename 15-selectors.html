@@ -8,11 +8,17 @@
     <title>Basic Selectors</title>
 
     <style>
-/*       tüm h1 leri seçer
+
+/*       
+        !important özelleiğini eklediğimiz zaman alt tarafta h1'e başka renk atadığımızda  overwrite olmaz. renk kırmızı olarak kalır
+        aynı elemanların aynı özelliklerini etkileyen seçiciler varsa en son seçilen kullanılır, !important olmadığı sürece
+        
+        tüm h1 leri seçer
         h1 {
-            color: red;
-            background: blue;
+            color: red !important;
+            
         }
+
 
         tüm p leri seçer
         p {
