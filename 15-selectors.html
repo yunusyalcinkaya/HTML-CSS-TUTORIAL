@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+
+    <style>
+/*       tüm h1 leri seçer
+        h1 {
+            color: red;
+            background: blue;
+        }
+
+        tüm p leri seçer
+        p {
+            color: red;
+            background: blue;
+        } 
+*/
+
+
+/*
+        "p" ve "h1" lerin tümünü seçer 
+        h1,p {
+            color: red;
+            background: blue;
+        }
+*/
+/*      id'si "logo" olanları seçer
+        #logo {
+            color: red;
+            background:blue;
+        }
+*/
+
+/* class'ı "info" olanları seçer(lead info olan paragrafı da seçer)
+        .info {
+            color: red;
+            background: blue;
+        }
+*/
+
+/* id'si "logo" veya class'ı "lead" olanları seç
+        #logo, .lead {
+            color: red;
+            background: blue;
+        }
+*/
+/* id'si "para1" aynı zamanda class'ı "lead" olanları seçer
+        #para1.lead {
+            color: red;
+            background: blue;
+        }
+         */
+
+/* tüm a etiketlerini seçer
+default olarak a etiketlerinin altı çizi olur(text-decoration: underline)
+        a {
+            text-decoration: none;
+        } */
+/*  ul'in içindeki li'nin içindeki a etiketlerini seçer
+        ul li a {
+            text-decoration: none;
+        }
+*/
+/* class'ı info olan etiketin altındaki span'leri seçer
+        .info span {
+            color: red;
+            background-color: blue;
+        }
+ */
+/* class'ı info olanların altındaki class'ı primary olanları seçer        
+        .info .primary {
+            color: red;
+        }
+ */
+/* sayfadaki bütün elemanları seçer        
+        * {
+            font-size: 30px;
+        }
+ */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Başlık 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+
+    <h1>
+        Başlık 2
+    </h1>
+
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sunt eveniet minus deserunt natus beatae,
+        quasi laboriosam adipisci sint non?
+
+    </p>
+
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Quibusdam, esse.
+        Perferendis repudiandae neque illum libero tempora magni praesentium ipsam numquam.
+    </p>
+
+    <p class="info">
+        Lorem ipsum <span>dolor</span> sit amet, consectetur adipisicing elit. Accusantium provident esse asperiores obcaecati error
+        beatae voluptatem eaque nemo a veniam.
+
+    </p>
+    <p>Test paragraph</p>
+
+    <a href="#">Home</a>
+
+
+</body>
+
+</html>
