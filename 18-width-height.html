@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#box-1 {
+            background: #b5b5b5;
+            width: 50%;/*sayfanın genişliğine göre otomatik ayarlar. sayfanın yarısını kaplar*/
+            height: 100px;
+        }
+        div#box-2 {
+            width: 50%;
+            height: 50px;
+            background: red;
+        }/*id si box-2 olan div içinde olduğu için genişliği box-2 nin yarısı kadar olur*/
+   
+        div#box-3 {
+            background: blue;
+            max-width: 700px;
+            height: 100px;
+        }/*max-width tanımladığımızda sayfayı ne kadar büyütürsek büyütelim en fazla 700px olur,
+        ama sayfayı küçülttüğümüzde genişlik de o kadar küçülür*/
+   </style>
+</head>
+<body>
+    <div id="box-1">
+        <div id="box-2"></div>
+    </div>
+    <div id="box-3"></div>
+
+    
+    
+</body>
+</html>
