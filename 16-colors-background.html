@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+
+    <style>
+        h1 {
+            color: rgb(255, 0, 0);
+            /*
+            color: #ff0000
+            bu şekilde rengi hexadecimal olarak da verebiliriz
+            */
+            
+            /*opacity(matlık) 0-1 aralığında değer alır. 1 tam mat*/
+            opacity: 0.4;
+            /*
+            color: rgba(255,0,0,0.4)
+            apacity bu şekilde de ayarlanabilir. son değer opacity değeri
+            */
+
+        }
+
+        .box-1 {
+                background-color: green;
+                color: red;
+            }
+        .box-2 {
+            background-image: url(./images/background.jpg);
+            color: green;
+            height: 200px;
+            width: 200px;
+            background-size: cover;
+            /*
+            sadece arka plan resmini verip boyutları vermediğimiz zaman aşağıda tanımladığımız
+            div küçük bir alan kapladığı için resmin çok küçük bir kısmı gözükür. yüksekilik ve 
+            genişliği ihtiyacımız olan boyutta tanımladığımız zaman resmin kısmı gözüktü(resim 400*400)
+            background-size özelliğine cover verdiğimizde tanımladığımız boyutlara resmi sığdırır.
+            */
+        }
+        #başlık-2 {
+            color: brown;
+            background-image: url(./images/logo.png);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /*
+        sadece arka planı ayarlayıp diğer özellikleri kullanmadığımız zaman resim büyük
+        gelirse sığmayacak küçük gelirse resim tekrarlanacak. buradaki özellikleri kullanarak
+        arka planın yani resmin boyutunu ayarladık, tekrarlamayı kapattık ve arka planın
+        ortasına hizaladık. attachment: fixed özelliği; scrool u kaydırdığımız zaman
+        arka plan da ekran ile birlikte kayar
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Başlıl 1</h1>
+
+    <div class="box-1">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, cupiditate.</p>
+    </div>
+    <div class="box-2">
+
+        <h3>Box 2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, commodi.</p>
+    
+    </div>
+<!--div.box-1 deyip enter ya da tab tuşuna basarsan div içine box-1 class'ını kendisi oluşturur-->
+
+<!--div#box-1 deyip enter ya da tab tuşuna basarsan div içine box-1 idsini otomatik oluşturur  -->  
+
+
+    <h2>Başlık 2</h2>
+    <p id="başlık-2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda error odit reprehenderit at, eum maiores explicabo reiciendis minima architecto dignissimos maxime ut, voluptatibus sint possimus libero, quod culpa. Quo nihil facilis amet totam repudiandae doloremque repellendus quas adipisci veritatis explicabo, quisquam molestias quidem. Nihil laboriosam nemo, deserunt qui commodi nulla, totam id quaerat minus perspiciatis sit nobis, iste ipsam et pariatur doloremque eligendi reiciendis dicta reprehenderit! Necessitatibus aliquid neque quis, voluptate delectus voluptas eligendi totam, nam accusantium corrupti, eveniet magni. Reprehenderit totam voluptates maiores expedita, dolorum libero beatae suscipit voluptas. Aspernatur qui vero dolore eveniet, eius assumenda iure sed sapiente veritatis saepe, ipsa totam tenetur aperiam consequuntur vitae, rerum quo officiis voluptates nobis. Eaque deleniti laboriosam fuga suscipit, fugit cum optio quo impedit nihil accusamus corporis eveniet quam voluptatem sapiente ut eum reiciendis recusandae numquam ipsam cupiditate ea alias dignissimos, quidem deserunt. Nostrum tempore dolorem nemo impedit, enim voluptatum, error alias ad sunt cum nobis eligendi quos assumenda officiis ex accusantium, repellendus ea commodi odit vitae atque? Consequuntur est sequi dolorum porro, optio veniam dolorem quibusdam voluptatibus temporibus repudiandae facere enim minus numquam asperiores ipsum quod sed repellat quas nobis inventore nemo consequatur sint expedita ab. Soluta voluptates optio est nobis quae, enim dolorum vitae autem officiis quibusdam. At eligendi nam odit ullam cupiditate, sit hic laboriosam magni necessitatibus corrupti suscipit fugit maxime sint, quibusdam totam iste officiis debitis tenetur. Nihil, pariatur id! Sapiente optio at velit aperiam laudantium alias architecto ea quasi eos atque cupiditate animi, id, a quas obcaecati cum placeat veritatis nobis corrupti accusantium itaque sequi natus. Placeat a minus animi, rem fugit dolore officiis labore. Distinctio porro dicta iusto officia, reiciendis commodi molestias a necessitatibus voluptas quas ipsam. Dignissimos, ea officia adipisci neque maiores eius! Iste, repellendus! Atque earum ut ullam sunt voluptatem perferendis error quisquam necessitatibus eveniet exercitationem. Explicabo laborum harum sequi. Cumque illo quaerat exercitationem facilis enim ipsa eveniet iusto reiciendis dolorem aut sapiente impedit, ducimus vitae earum fuga provident magnam doloremque beatae? Qui odit dolor suscipit? Explicabo, nihil voluptas magnam nostrum aut voluptatibus facere? Velit culpa nobis maiores earum quibusdam numquam soluta nemo praesentium, dignissimos placeat nisi inventore minus illo voluptate obcaecati nostrum ullam molestiae corporis provident accusantium. Ratione atque autem dolor officiis nihil alias fugit possimus? Quos laboriosam nobis, corrupti, vero exercitationem reiciendis rem earum impedit ullam, architecto incidunt expedita soluta maxime doloribus unde consequuntur harum. Minus beatae similique delectus facilis autem! Iure distinctio voluptatibus assumenda! Blanditiis, voluptates. Aut eveniet excepturi error quis magnam repellat, porro unde nobis aspernatur, perspiciatis ipsum! Similique, quidem. Porro facere illum ipsum quasi. Amet pariatur tempore nisi expedita mollitia rerum hic velit eum ipsa et harum, nam qui eveniet provident facere veritatis, eos fugiat praesentium. Veritatis distinctio similique fuga dignissimos autem id ab laborum cupiditate! Cum minima facere ipsam aliquid iure corrupti aperiam tempore magnam. Quas consequuntur reprehenderit magni, cupiditate, molestiae nesciunt adipisci explicabo impedit repellat culpa voluptatum! Quia beatae quam magni numquam exercitationem omnis illo soluta repellat odit cum fuga animi, itaque aspernatur officiis sapiente ipsa, autem mollitia error ipsam odio enim! Esse atque impedit aliquam ad! Minus error quasi incidunt suscipit qui eos, perferendis tenetur alias necessitatibus dolore enim voluptas nemo atque fugiat consectetur. Nemo, rem. Aliquam nobis blanditiis dolore adipisci velit, quibusdam dignissimos voluptate sequi, laboriosam nesciunt totam, excepturi officiis rem deleniti? Vero eum ex tempora? Minima, aliquid eos velit, saepe omnis sit obcaecati vero accusamus delectus est magni veniam provident quasi vitae perspiciatis blanditiis iure, reprehenderit consectetur cum a commodi. Nam ut maxime vitae dolorum, eligendi tenetur exercitationem facilis modi ratione nesciunt id omnis ipsum magni quae dolor natus enim quisquam libero? Exercitationem magni atque amet suscipit quo voluptas dolorum? Dolore, cumque recusandae sunt corrupti nemo eum eligendi maxime voluptate quos possimus officiis laudantium a aliquid minima laborum consequatur placeat neque quia dicta earum aut officia voluptatem soluta. Deleniti molestiae blanditiis atque dicta asperiores, magni laboriosam enim! Hic sint totam iusto eius. Dicta deserunt voluptate quisquam? Possimus fugit magni incidunt ullam corporis cupiditate nostrum sapiente cumque? Similique a, odit blanditiis necessitatibus expedita, voluptatem quis itaque provident officiis commodi quia? Eos quidem fugiat aperiam corrupti porro reprehenderit aut commodi magni iure, error, corporis earum sit minima! Dicta exercitationem quia nulla error, non incidunt ipsum quibusdam quam enim explicabo, maiores dolorem ipsa voluptatum omnis illo aliquam ipsam. Dolorum vero ea explicabo tenetur quia assumenda quibusdam sapiente? Similique, deserunt a explicabo ipsa aperiam unde temporibus totam hic minima tenetur neque possimus nisi placeat. Enim quisquam iure beatae, dolor rem, quam ut, accusantium saepe nihil sapiente aperiam sit quas ea? Eveniet cum blanditiis veritatis, ea ducimus sint, officiis modi, nobis assumenda saepe possimus deleniti unde. Recusandae error facilis voluptates aperiam. Quis officia a consequuntur eum ea illo sint quisquam corporis laborum dolorem optio, cumque vero debitis doloribus ipsam animi voluptatibus consectetur quibusdam minus ullam, provident, atque recusandae eos suscipit. Maxime doloribus quos placeat asperiores, sint suscipit vitae officia earum obcaecati provident sed deserunt ducimus laudantium culpa totam, quis facere tempora perferendis porro accusamus dignissimos fugiat est. Ullam expedita odio perspiciatis at, voluptatem cum, distinctio inventore animi ducimus totam possimus corrupti dolorem fugiat! Hic vitae facilis consectetur vero, quas magni maxime voluptate! Saepe ipsum, animi tenetur modi, ipsa velit consequuntur repellendus aspernatur voluptatem veritatis sapiente inventore, repellat ex quos? Magni aperiam perferendis excepturi id velit provident quia reiciendis inventore repudiandae vero, ratione aspernatur culpa tempore officiis consectetur debitis libero impedit fugit. Nam, voluptates esse doloribus et dolore deleniti porro reprehenderit aperiam perferendis laborum natus amet iste, vero blanditiis provident dolorem at. Error, nulla et, dolorem distinctio suscipit deserunt quod odit itaque quasi minus nostrum nisi dolorum esse magni iste praesentium illum, nam non recusandae ullam? Minus molestiae dicta, molestias quaerat, error vero quo voluptate quod qui ullam illo reprehenderit labore exercitationem quasi? Fugiat porro, deserunt quod exercitationem pariatur ipsum iusto quia suscipit rem beatae. Iusto accusamus pariatur, similique inventore eos alias voluptatem vel maxime, omnis assumenda rerum nihil doloribus sint corrupti commodi expedita dicta atque blanditiis? Nulla ullam iusto ipsam cum quae ab voluptatum quisquam animi, explicabo repudiandae?
+    </p>
+
+</body>
+</html>
