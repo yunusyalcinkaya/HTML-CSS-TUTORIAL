@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.box-1 {
+            width: 500px;
+            height: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: blue;
+
+            padding-left: 15px;
+            padding-top: 15px;
+
+            /*
+            padding: top right bottom left sıra bu şekilde
+            padding: 15px 0px 0px 15px
+            aynı işi görür
+            */
+            /* "padding: 20px" her tarafta 20 pixel boşluk verir */
+            
+            box-sizing: border-box;
+            /*normalde bir elemana padding verdiğimizde, elementin kapladığı
+            alan artacak. örneğin genişliğini 50px verdiğimiz bir elemente 
+            10px padding verdiğimizde genişlik 60px olur. ama bu özellik sayesinde
+            padding verdiğimizde content alanı küçülüyor ve elementin boyutları sabit kalıyor
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, assumenda.
+    </div>
+</body>
+</html>
