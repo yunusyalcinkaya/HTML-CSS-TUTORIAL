@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }/*tarayıcı default olarak sayfanın kenarlarına boşluk verir bunu engellemek için bütün boşlukları sıfır yaptık*/
+
+        div.box-1 {
+            background: #555555;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            /*marginleri bu şekilde verdiğimizde content sayfayı yatayda ortalar*/
+
+            /*
+            margin: top right bottom left sıra bu şekilde
+            "margin: 0px auto 0px auto"
+            şeklinde tek satırda istediğimiz yönlerine margin verebiliriz
+            */
+
+            /*
+            margin: top-bottom right-left sıra bu şekilde
+            "margin: 0px auto"
+            bu şekilde de yatayda hizalayarak aynı işi görür
+            */
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sunt!
+    </div>
+    
+</body>
+</html>
