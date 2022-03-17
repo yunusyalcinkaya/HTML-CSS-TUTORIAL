@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+        }
+        .box-1 {
+            background: red;
+        }
+        .box-2 {
+            background: blue;
+        }
+        #link {
+            background: yellow;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+        }
+        /*block-level elemanlara width ve height özellikleri verilebilir, sonraki
+        eklediğimiz elemanlar da bir sonraki satırdan başlar. inline elemanlar içeriği
+        kadar alan kaplar, sonradan eklenen elemanlar alt satıra değil yanına eklenir.
+        normalde inline elemanlara width ve height özellikleri verilmez ama
+        display: inline-block özelliğini kullanaran verebiliriz. örneğin a etiketinde
+        belirlediğimiz boyutta herhangi bir yere tıkladığımızda istenilen linke gider*/
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    Testing Content
+    <div class="box box-2"></div>
+    <a href="#" id="link">Deneme linki</a>
+    Testing Content
+
+    
+</body>
+</html>
